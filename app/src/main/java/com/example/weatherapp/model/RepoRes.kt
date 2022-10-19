@@ -1,6 +1,6 @@
 package com.example.weatherapp.model
 
-class RepositoryImpl : Repository {
+abstract class Repo : Repository {
     override fun getWeatherFromLocalSource(): Weather {
         return Weather()
     }
@@ -8,4 +8,5 @@ class RepositoryImpl : Repository {
     override fun getWeatherFromServer(): Weather {
         return Weather()
     }
+
 }
