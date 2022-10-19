@@ -5,7 +5,6 @@ interface Repository {
     fun getWeatherFromLocalSourceRus(): List<Weather>
     fun getWeatherFromLocalSourceWorld(): List<Weather>
 }
-
 class RepositoryImpl : Repository {
     override fun getWeatherFromServer(): Weather {
         return Weather()
@@ -18,6 +17,4 @@ class RepositoryImpl : Repository {
     override fun getWeatherFromLocalSourceWorld(): List<Weather> {
         return getWorldCities()
     }
-
-
 }

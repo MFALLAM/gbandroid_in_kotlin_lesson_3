@@ -6,7 +6,6 @@ import com.example.weatherapp.model.*
 import java.lang.Thread.sleep
 import kotlin.random.Random
 
-
 class WeatherViewModelSingle(
     private val liveData: MutableLiveData<AppState> = MutableLiveData(),
     private val repository: Repository = RepositoryImpl(),

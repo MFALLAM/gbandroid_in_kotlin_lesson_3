@@ -8,5 +8,4 @@ abstract class Repo : Repository {
     override fun getWeatherFromServer(): Weather {
         return Weather()
     }
-
 }

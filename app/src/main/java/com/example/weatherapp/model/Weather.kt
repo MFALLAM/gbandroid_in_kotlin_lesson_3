@@ -63,7 +63,6 @@ fun getWorldCities(): List<Weather> {
     )
 }
 
-
 fun getRussianCities(): List<Weather> {
     return listOf(
         Weather(City("Москва", 55.755826, 37.617299900000035), 1, 2),

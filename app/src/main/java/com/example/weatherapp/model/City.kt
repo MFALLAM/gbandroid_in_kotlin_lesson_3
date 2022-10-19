@@ -2,7 +2,6 @@ package com.example.weatherapp.model
 
 import android.os.Parcel
 import android.os.Parcelable
-
 @Parcelize
 data class City(
     val name: String?,
@@ -15,7 +14,6 @@ data class City(
         parcel.readDouble()
     ) {
     }
-
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
         parcel.writeDouble(lat)
@@ -36,5 +34,4 @@ data class City(
         }
     }
 }
-
 annotation class Parcelize
